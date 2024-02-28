@@ -1,0 +1,56 @@
+:root {
+    font-size: 16px;
+    --my-padding-left: 1.5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+header {
+    min-width: 100%;
+    min-height: 200px;
+    background-color: burlywood;
+}
+
+nav {
+    flex: 1 120px;
+    background-color: darkgreen;
+}
+
+main {
+    flex: 9;
+    background-color: greenyellow;
+}
+
+footer {
+    clear: both;
+    background-color: burlywood;
+    min-width: 100%;
+}
+
+p {
+    font-size: 1rem;
+    padding-left: var(--my-padding-left);
+}
+
+h1 {
+    color: rgb(9, 10, 9);
+    font-weight: medium;
+    font-size: 1.8rem;
+    padding-left: var(--my-padding-left);
+}
+
+@media screen and (max-width: 600px) {
+    div#container {
+        flex-direction: column;
+    }
+}
